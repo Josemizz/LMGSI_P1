@@ -1,61 +1,63 @@
 <!DOCTYPE html>
-<html lang="cat">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <meta name="description" content="Cercador de pel·lícules: milions de títols en un sol lloc.">
+    <title>Cercador de pel·lícules | TMDB</title>
+    <link rel="icon" href="blindaje.png" type="image/x-icon">
 </head>
-
-<header>
-
-   <a href="index.html">
-        <img src="cositas del visual/logotipo.jpg" alt="TMDB" height="25">
-    </a>
-    <nav>
-        <ul>
-            <li><a href="https://www.buscador.html">BUSCADOR</a></li>
-            <li><a href="https://contacto.html">CONTACTO</a></li>
-        </ul>
-    </nav>
-
-</header>
-<main>
-     <h1>BUSCAR una pel·lícula</h1>
-
-        <p>Milions de títols, un sol cercador.</p>
-
-        <div>
-            <input type="text" placeholder="Cerca una pel·lícula, per exemple...">
-            <button>Cercar</button>
-        </div>
-    </section>
-
-    <section>
-        <h2>Resultats</h2>
-
-        <article>
-            <h3>Nom de la pel·lícula 1</h3>
-            <p>Descripció de la primera pel·lícula.</p>
-        </article>
-
-        <article>
-            <h3>Nom de la pel·lícula 2</h3>
-            <p>Descripció de la segona pel·lícula.</p>
-        </article>
-
-        <article>
-            <h3>Nom de la pel·lícula 3</h3>
-            <p>Descripció de la tercera pel·lícula.</p>
-        </article>
-    </section>
-</main>
-
-<footer>
-    <p>© 2026 TMDB - Tots els drets reservats.</p>
-</footer>
-
 <body>
-    
+
+    <header>
+        <a href="index.html">
+            <img src="logotipo.png" alt="Logotip de TMDB" height="25">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">INDEX</a></li>
+                <li><a href="contacte.html">CONTACTE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Buscar una pel·lícula</h1>
+            <p>Milions de títols, un sol cercador.</p>
+
+            <form method="get" action="https://www.themoviedb.org/search">
+                <label for="query">Títol de la pel·lícula:</label>
+                <input type="search" name="query" id="query"
+                       placeholder="Cerca una pel·lícula, per exemple: Matrix"
+                       required>
+                <button type="submit">Cercar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Resultats</h2>
+
+            <article>
+                <h3>Nom de la pel·lícula 1</h3>
+                <p>Descripció de la primera pel·lícula.</p>
+            </article>
+
+            <article>
+                <h3>Nom de la pel·lícula 2</h3>
+                <p>Descripció de la segona pel·lícula.</p>
+            </article>
+
+            <article>
+                <h3>Nom de la pel·lícula 3</h3>
+                <p>Descripció de la tercera pel·lícula.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 TMDB - Tots els drets reservats.</p>
+    </footer>
+
 </body>
 </html>
